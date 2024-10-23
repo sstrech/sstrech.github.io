@@ -8,3 +8,5 @@ sstrech
 # Github Pages URL
 Repo: https://github.com/sstrech/sstrech.github.io.git
 Pages: sstrech.github,io
+
+# For our bash commit
