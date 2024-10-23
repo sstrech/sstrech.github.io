@@ -9,4 +9,4 @@ sstrech
 Repo: https://github.com/sstrech/sstrech.github.io.git
 Pages: sstrech.github,io
 
-# For our bash commit
+# For our bash commits
