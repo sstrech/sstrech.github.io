@@ -1,0 +1,129 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Georgia&display=swap');
+@font-face {
+    font-family: Carnevalee;
+    src: url('../Carnevalee\ Freakshow.ttf');
+}
+body{
+    background-color: aqua;
+    background-image: url("../camping.jpg");
+    
+    background-size: 100%;
+    background-attachment: fixed;
+    /* display: flex; */
+    margin: 0 auto 0 auto;
+}
+
+.main{
+    /* text-align: center; */
+    color:black;
+    overflow:hidden;
+   
+}
+
+.header{
+    text-align: center;
+    font-family: "Carnevalee", serif;
+    font-size: 240px;
+    font-weight: 10;
+    opacity: 50%;
+    right: 0;
+    top:0;
+    letter-spacing: 40px;
+    height: 100vh;
+    margin-top: -245px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.first-description{
+    
+    text-align: center;
+    font-family: "Georgia", serif;
+    height: 18vh;
+    border-radius: 30px;
+    width: 80vw;
+    margin: 0 10% 0 10%;
+    background-color: #00443B;
+
+}
+.first-description h3{
+    padding: 0 2% 2% 2%;
+}
+#image{
+    
+    max-width: 70%;
+    margin: 12% 15% 0 15%;
+    border-radius: 30px;
+    border-width: 30px;
+    border:10px solid #00443B;
+}
+.second-description{
+    text-align: center;
+    font-family: "Georgia", serif;
+    height: 18vh;
+    border-radius: 30px;
+    width: 80vw;
+    margin: 0 10% 0 10%;
+    background-color: #00443B;
+}
+.second-description h3{
+    padding: 0 2% 2% 2%;
+}
+.third-description{
+    text-align: center;
+    font-family: "Georgia", serif;
+    height: 18vh;
+    border-radius: 30px;
+    width: 80vw;
+    margin: 0 10% 0 10%;
+    background-color: #00443B;
+}
+.third-description h3{
+    padding: 0 2% 2% 2%;
+}
+
+.part3{
+    background-color: #1d2f2c;
+    border-radius: 20px;
+}
+.part3 h5{
+    
+    font-size: 40px;
+    text-align: center;
+    font-weight: 500;
+    text-decoration: none;
+    padding-top: 10px;
+}
+
+.part3>nav{
+    background-color: #1d2f2c;
+    position:relative;
+    border-radius: 25px;
+    height: 18vh;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 600;
+    text-decoration: none;
+}
+.part3>nav a button{
+    background-color: #b6c71e;
+    height: 10vh;
+    width: 20vw;
+    border-radius: 25px;
+    font-size: 25px;
+    font-weight: 500;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-family: "Georgia", serif;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+.part3>nav a:hover button {
+    background-color: #46ACC2;
+    color: rgb(0, 0, 0);
+    font-weight: 510;
+
+}
