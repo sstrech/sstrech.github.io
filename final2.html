@@ -1,0 +1,80 @@
+<!-- This is the references page for the final -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Samuel Strechay's Midterm Project</title>
+    <link rel="stylesheet" href="css/final2styles.css">
+
+
+</head>
+<body>
+    <!-- <section class="background">
+        <h1>References</h1>
+    </section> -->
+    <section class="main">
+        <div class="background">        </div>
+        <div class="header">
+            
+            <h1>Base Converter</h1>
+            <div class="container">
+                <div class="converter">
+                    <h2>Enter Decimal Number</h2>
+                    <textarea id="textInput" placeholder="Type or paste your text here..." required=""></textarea>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="output">
+            <div class="container2">
+                <div class="hex">
+                    <p>
+                        Hex: 
+                        <span class="hexCalc" id="hexDisplay"></span>
+                    </p>
+                </div>
+                <div class="binary">
+                    <p>
+                        Binary: 
+                        <span class="binaryCalc" id="binaryDisplay"></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <script>
+            const textarea = document.getElementById("textInput");
+            const hexOutput = document.getElementById("hexDisplay");
+            const binaryOutput = document.getElementById("binaryDisplay");
+
+            function dec2Hex(dec) {
+                return Math.abs(dec).toString(16);
+            }
+
+            function dec2Binary(dec) {
+                return Math.abs(dec).toString(2);
+            }
+
+            textarea.addEventListener("input", function() {
+            const text = this.value;
+            const hex = dec2Hex(text);
+            hexOutput.textContent = hex;
+            });
+
+            textarea.addEventListener("input", function() {
+            const text = this.value;
+            const binary = dec2Binary(text);
+            binaryOutput.textContent = binary;
+            });
+        </script>
+    </section>
+
+    <section class="part3">
+        <h5>More links</h5>
+        <nav id="class-link">
+            <a href="final1.html" target="_blank"><button>Back To Original Page</button></a>
+            <!-- <a href="midterm2.html" target="_blank"><button>To More Information</button></a> -->
+        </nav>
+    </section>
+        
+</body>
+</html>

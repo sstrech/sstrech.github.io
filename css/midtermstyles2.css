@@ -6,7 +6,8 @@
 }
 body{
     background-color: aqua;
-    background-image: url("../camping.jpg");
+    background-image: url("../images/camping.jpg");
+    
     
     background-size: 100%;
     background-attachment: fixed;

@@ -1,0 +1,87 @@
+<!-- This is the references page for the final -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Samuel Strechay's Midterm Project</title>
+    <link rel="stylesheet" href="css/final3styles.css">
+
+
+</head>
+<body>
+    <!-- <section class="background">
+        <h1>References</h1>
+    </section> -->
+    <section class="main">
+        <div class="background">        </div>
+        <div class="header">
+            
+            <h1>Word Counter</h1>
+            <div class="container">
+                <div class="converter">
+                    <h2>Enter Text</h2>
+                    <textarea id="textInput" placeholder="Type or paste your text here..." required=""></textarea>
+                   
+                </div>
+            </div>
+        </div>
+
+        <div class="output">
+            <div class="container2">
+                <div class="chars">
+                    <p>
+                        Characters: 
+                        <span class="charsCalc" id="charsDisplay">0</span>
+                    </p>
+                </div>
+                <div class="spaces">
+                    <p>
+                        Spaces: 
+                        <span class="spacesCalc" id="spacesDisplay">0</span>
+                    </p>
+                </div>
+                <div class="words">
+                    <p>
+                        Words: 
+                        <span class="wordsCalc" id="wordsDisplay">0</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <script>
+            const textarea = document.getElementById("textInput");
+            const wordCount = document.getElementById("wordsDisplay");
+            const charCount = document.getElementById("charsDisplay");
+            const spaceCount = document.getElementById("spacesDisplay");
+
+            /*This is the function for the word counting function*/
+            textarea.addEventListener("input", function() {
+              const text = this.value;
+              const words = text.trim().split(/\s+/).filter(word => word !== "");
+              wordCount.textContent = words.length;
+            });
+
+            /*This is the function for the char counting function*/
+            textarea.addEventListener("input", function() {
+              const text = this.value;
+              charCount.textContent = text.length;
+            });
+
+            /*This is the function for the space counting function*/
+            textarea.addEventListener("input", function() {
+              const text = this.value;
+              spaceCount.textContent = text.split(" ").length - 1;
+            });
+        </script>
+
+    </section>
+
+    <section class="part3">
+        <h5>More links</h5>
+        <nav id="class-link">
+            <a href="final1.html" target="_blank"><button>Back To Original Page</button></a>
+            <!-- <a href="midterm2.html" target="_blank"><button>To More Information</button></a> -->
+        </nav>
+    </section>
+        
+</body>
+</html>
